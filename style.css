@@ -1,0 +1,178 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: calc(20px + (30px - 20px) * (100vw - 400px) / (1440 - 400));
+}
+
+:root {
+    --title : #4ecdc4;
+    --nav: #ff6b6b;
+}
+
+.title {
+    color: var(--title);
+}
+
+nav {
+    background: var(--nav);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+header {
+    margin: 60px auto 20px;
+    width: 98vw;
+    border: 1px solid black;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    margin-top: 40px;
+}
+
+header h2 {
+    margin-bottom: 20px;
+}
+
+header a {
+    border: 2px solid red;
+    border-radius: 5px;
+    max-width: 700px;
+    margin: 5px;
+    padding: 5px 10px;
+    color: black;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .5s;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+.login {
+    margin-bottom: 25px;
+    border-color: rgb(0, 255, 0);
+}
+
+header p {
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-box {
+    width: 40%;
+    margin: 10px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .1s;
+    background-color: white;
+}
+
+.main-box:hover {
+    transform: scale(1.01);
+}
+
+.box {
+    margin: 5px;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+form {
+    width: 81%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 200px;
+    padding: 5px;
+    text-align: left;
+}
+
+form button {
+    padding: 5px;
+    margin: 5px;
+    background-color: transparent;
+    border-color: #ff6b6b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    padding: 20px;
+}
+
+footer div {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #6A6A6A;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #a3a3a3;
+    color: #a3a3a3;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        margin: 60px auto 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    form {
+        width: 90%;
+    }
+}
