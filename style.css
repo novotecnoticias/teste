@@ -42,7 +42,7 @@ nav a:hover {
 
 header {
     margin: 60px auto 20px;
-    width: 98vw;
+    width: 80vw;
     border: 1px solid black;
     min-width: 300px;
     display: flex;
